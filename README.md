@@ -21,8 +21,8 @@ The goal for this project was to build a stats card component that allows the us
 
 ### Languages
 
-- [HTML](https://htmlreference.io/)
-- [CSS](https://css-tricks.com/guides/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Sass](https://sass-lang.com/)
 - [JavaScript](https://javascript.info/)
 
