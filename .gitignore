@@ -1,0 +1,7 @@
+# VS Code settings
+.vscode
+
+# Dependency Directories
+node_modules
+
+.DS_Store
