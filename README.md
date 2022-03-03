@@ -39,8 +39,8 @@ The following packages are required for this project. Gulp-Sass and Sass were in
 
 ### Other Tools
 
-- [Affinity Photo](https://affinity.serif.com/en-gb/photo/)
-  - Affinity Photo was used to view the .psd file for information on colours and fonts used
+- [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
+  - Affinity Designer was used to view the .psd file for information on colours and fonts used
 - [Git](https://git-scm.com/)
   - Git was used for version control by utilising the terminal in VS Code to commit to Git and push to GitHub
 - [GitHub](https://github.com/)
