@@ -46,6 +46,9 @@ body {
 }
 
 .dropdown__list {
+  position: absolute;
+  width: 268px;
+
   li {
     cursor: pointer;
     list-style-type: none;
