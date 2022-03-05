@@ -41,6 +41,8 @@ The following packages are required for this project and are installed as dev de
 
 - [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
   - Affinity Designer was used to view the .psd file for information on colours and fonts used
+- [Font Awesome](https://fontawesome.com/)
+  - Used to add a chevron icon to the dropdown menu
 - [Git](https://git-scm.com/)
   - Git was used for version control by utilising the terminal in VS Code to commit to Git and push to GitHub
 - [GitHub](https://github.com/)
