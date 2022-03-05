@@ -1,5 +1,6 @@
 const dropdownBtn = document.querySelector('.dropdown__btn');
 const dropdownList = document.querySelector('.dropdown__list');
+const player = document.querySelectorAll('.player');
 
 // Get data from player-stats.json
 const getData = async () => {
@@ -9,25 +10,24 @@ const getData = async () => {
   return data;
 };
 
-// Create list of player names
-const listPlayers = () => {
+// Create a list of player names
+const getPlayers = () => {
   getData().then(data => {
     const { players } = data;
 
     players.forEach((player, i) => {
       const playerName = player.player.name;
-      console.log(playerName.first, playerName.last);
 
-      const ul = document.createElement('ul');
-      ul.innerHTML = `
-        <li class="box--grey">${playerName.first} ${playerName.last}</li>
-      `;
-      dropdownList.appendChild(ul);
+      const li = document.createElement('li');
+      li.textContent = `${playerName.first} ${playerName.last}`;
+      li.classList.add('box--grey', 'player');
+      dropdownList.appendChild(li);
     });
   });
 };
 
-listPlayers();
+// Call function to populate dropdown menu with player names
+getPlayers();
 
 dropdownBtn.addEventListener('click', () => {
   dropdownList.classList.toggle('hidden');
