@@ -26,7 +26,7 @@
 }
 
 .player__profile {
-  background: url('../../assets/images/background-pattern.png') no-repeat top
+  background: url('../../assets/images/background_pattern.png') no-repeat top
     right;
 
   .player {
@@ -51,13 +51,18 @@
   }
 
   .badge {
+    @include column;
     background: $white;
     border-radius: 50%;
     height: 82px;
     width: 82px;
     position: absolute;
-    top: -40px;
+    top: -30px;
     right: 1rem;
+
+    img {
+      height: 65px;
+    }
   }
 }
 

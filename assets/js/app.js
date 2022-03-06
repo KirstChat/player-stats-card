@@ -3,6 +3,7 @@ const dropdownText = document.querySelector('.dropdown__text');
 const dropdownList = document.querySelector('.dropdown__list');
 const playerProfile = document.querySelector('.player__profile');
 const playerImg = document.querySelector('.player');
+const badge = document.querySelector('.badge');
 const playerStats = document.querySelector('.player-stats');
 
 let appearances;
@@ -11,7 +12,7 @@ let fwdPass;
 let backwardPass;
 let minsPlayed;
 
-// Get data from player-stats.json
+// Get player-stats.json data
 const getData = async () => {
   const res = await fetch(
     'https://raw.githubusercontent.com/KirstChat/player-stats-card/master/data/player-stats.json'
@@ -21,7 +22,7 @@ const getData = async () => {
   return data;
 };
 
-// Create a list of player names
+// Create a list of player names from data
 const getPlayers = () => {
   getData().then(data => {
     const { players } = data;
@@ -30,6 +31,7 @@ const getPlayers = () => {
       const playerName = player.player.name;
       const playerPosition = player.player.info;
       const imgPath = player.player.id;
+      const teamName = player.player.currentTeam;
       const stats = player.stats;
       const li = document.createElement('li');
 
@@ -37,7 +39,7 @@ const getPlayers = () => {
       li.classList.add('box--grey');
       dropdownList.appendChild(li);
 
-      // Add click event to player name
+      // Add click event to player name and update text
       li.addEventListener('click', e => {
         dropdownText.textContent = e.target.textContent;
         dropdownList.classList.add('hidden');
@@ -45,6 +47,7 @@ const getPlayers = () => {
 
         if (dropdownText.textContent === li.textContent) {
           setPlayerImg(imgPath, playerName);
+          setBadge(teamName);
           setPlayerDetails(playerName, playerPosition);
           setPlayerStats(stats);
         }
@@ -59,6 +62,14 @@ getPlayers();
 const setPlayerImg = (imgPath, playerName) => {
   playerImg.setAttribute('src', `assets/images/p${imgPath}.png`);
   playerImg.setAttribute('alt', `${playerName.first} ${playerName.last}`);
+};
+
+// Set player team badge
+const setBadge = teamName => {
+  console.log(teamName.id);
+  badge
+    .querySelector('img')
+    .setAttribute('src', `assets/images/${teamName.id}.png`);
 };
 
 // Update UI with player name and position

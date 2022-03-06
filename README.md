@@ -115,6 +115,7 @@ This project was created in VS Code and pushed to GitHub using the steps outline
 - Transitions
 - Favicon
 - Click outside of dropdown to close
+- Loader when waiting on data to be fetched
 
 ---
 
@@ -126,6 +127,12 @@ This project was created in VS Code and pushed to GitHub using the steps outline
 - [Return last word in a string](https://stackoverflow.com/questions/20883404/javascript-returning-the-last-word-in-a-string)
 - [Structuring your sass project](https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4)
   - This article explained how to structure sass files for smaller projects
+
+- [Tottenham Hotspur Logo](https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.)
+- [Manchester City Logo](https://en.wikipedia.org/wiki/Manchester_City_F.C.)
+- [Manchester City Logo](https://en.wikipedia.org/wiki/Manchester_United_F.C.)
+- [Arsenal Logo](https://en.wikipedia.org/wiki/Arsenal_F.C.)
+- [Leicester City Logo](https://en.wikipedia.org/wiki/Leicester_City_F.C.)
 
 [Back to Contents](#contents)
 
