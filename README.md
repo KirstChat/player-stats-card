@@ -107,6 +107,14 @@ This project was created in VS Code and pushed to GitHub using the steps outline
 
 ---
 
+## Features to Add
+
+- Save to local storage
+- Transitions
+- Favicon
+
+---
+
 ## Testing
 
 Test on Chrome, Firefox and Edge if possible!
@@ -120,6 +128,7 @@ Test on Chrome, Firefox and Edge if possible!
 - [Sass Tutorial by The Net Ninja](https://www.youtube.com/watch?v=_kqN4hl9bGc&list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb)
   - This tutorial was used as a refresh crash course on Sass to meet the project requirements
 -[JavaScript forEach only returning last value](https://stackoverflow.com/questions/46808693/foreach-prints-only-last-value-the-typical-closure-issue-in-javascript)
+- [Return last word in a string](https://stackoverflow.com/questions/20883404/javascript-returning-the-last-word-in-a-string)
 
 [Back to Contents](#contents)
 

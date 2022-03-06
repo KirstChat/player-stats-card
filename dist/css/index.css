@@ -17,13 +17,15 @@ body {
 
 .card {
   background: #fff;
-  height: 600px;
   width: 300px;
 }
 
 .box--grey {
   background: #e9e9e9;
   padding: 0.75rem 1rem;
+}
+.box--grey:hover {
+  background: #d9d9d9;
 }
 
 .hidden {
@@ -40,9 +42,6 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.dropdown__btn:hover {
-  background: #d9d9d9;
-}
 
 .dropdown__list {
   position: absolute;
@@ -51,9 +50,6 @@ body {
 .dropdown__list li {
   cursor: pointer;
   list-style-type: none;
-}
-.dropdown__list li:hover {
-  background: #d9d9d9;
 }
 
 .player-stats {
@@ -74,6 +70,7 @@ body {
 }
 
 .stat {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   color: #000;
   display: flex;
   align-items: center;
