@@ -121,6 +121,6 @@ const passesPerMinute = (fwdPass, backwardPass, minsPlayed) => {
 };
 
 // Display list of players when menu is clicked
-dropdownBtn.addEventListener('click', () => {
+dropdownBtn.addEventListener('touchstart, click', () => {
   dropdownList.classList.toggle('hidden');
 });
