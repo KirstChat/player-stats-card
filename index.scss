@@ -54,15 +54,38 @@ body {
   }
 }
 
+.player__profile {
+  background: url('../../assets/images/background-pattern.png') no-repeat top
+    right;
+}
+
 .player-stats {
   background: #e90051;
   color: #fff;
   padding: 1rem;
+  position: relative;
 
   h1 {
     font-size: 1.375rem;
     font-weight: 400;
   }
+}
+
+.player {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: -1rem;
+  width: 60%;
+}
+
+.badge {
+  background: #fff;
+  border-radius: 50%;
+  height: 82px;
+  width: 82px;
+  position: absolute;
+  top: -40px;
+  right: 1rem;
 }
 
 .stats {

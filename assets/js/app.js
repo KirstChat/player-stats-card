@@ -19,6 +19,7 @@ const getPlayers = () => {
     const { players } = data;
 
     players.forEach(player => {
+      console.log(player);
       const playerName = player.player.name;
       const playerPosition = player.player.info;
       const imgPath = player.player.id;
@@ -36,7 +37,7 @@ const getPlayers = () => {
         playerProfile.classList.remove('hidden');
 
         if (dropdownText.textContent === li.textContent) {
-          setPlayerImg(imgPath);
+          setPlayerImg(imgPath, playerName);
           setPlayerDetails(playerName, playerPosition);
           setPlayerStats(stats);
         }
@@ -47,9 +48,10 @@ const getPlayers = () => {
 
 getPlayers();
 
-// Player Image
-const setPlayerImg = imgPath => {
+// Set player image
+const setPlayerImg = (imgPath, playerName) => {
   playerImg.setAttribute('src', `assets/images/p${imgPath}.png`);
+  playerImg.setAttribute('alt', `${playerName.first} ${playerName.last}`);
 };
 
 // Update UI with player name and position
@@ -58,6 +60,7 @@ const setPlayerDetails = (playerName, playerPosition) => {
     'h1'
   ).textContent = `${playerName.first} ${playerName.last}`;
 
+  // Return last word in the string
   const positionInfo = playerPosition.positionInfo.split(' ');
   playerStats.querySelector('.position').textContent = `${
     positionInfo[positionInfo.length - 1]
@@ -67,9 +70,17 @@ const setPlayerDetails = (playerName, playerPosition) => {
 // Update UI with player stats
 const setPlayerStats = stats => {
   stats.forEach(stat => {
-    console.log(stat.name, stat.value);
+    if (stat.name === 'appearances') {
+      playerStats.querySelector('#appearances').textContent = `${stat.value}`;
+    }
 
-    // if(stat.name === )
+    if (stat.name === 'goals') {
+      playerStats.querySelector('#goals').textContent = `${stat.value}`;
+    }
+
+    if (stat.name === 'goal_assist') {
+      playerStats.querySelector('#goal_assist').textContent = `${stat.value}`;
+    }
   });
 };
 
