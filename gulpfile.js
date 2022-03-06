@@ -1,10 +1,14 @@
 // Imports
 const { src, dest, watch, series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const prefix = require('gulp-autoprefixer');
 
 // Compile Sass into CSS
 function compileScss() {
-  return src('./assets/scss/**/*.scss').pipe(sass()).pipe(dest('./dist/css'));
+  return src('./assets/scss/**/*.scss')
+    .pipe(sass())
+    .pipe(prefix())
+    .pipe(dest('./dist/css'));
 }
 
 // Watch files for changes
