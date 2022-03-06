@@ -66,10 +66,11 @@ const setPlayerImg = (imgPath, playerName) => {
 
 // Set player team badge
 const setBadge = teamName => {
-  console.log(teamName.id);
+  console.log(teamName);
   badge
     .querySelector('img')
     .setAttribute('src', `assets/images/${teamName.id}.png`);
+  badge.querySelector('img').setAttribute('alt', `${teamName.name}`);
 };
 
 // Update UI with player name and position
