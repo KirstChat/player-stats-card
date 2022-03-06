@@ -66,7 +66,6 @@ const setPlayerImg = (imgPath, playerName) => {
 
 // Set player team badge
 const setBadge = teamName => {
-  console.log(teamName);
   badge
     .querySelector('img')
     .setAttribute('src', `assets/images/${teamName.id}.png`);
