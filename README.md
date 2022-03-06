@@ -129,6 +129,8 @@ Test on Chrome, Firefox and Edge if possible!
   - This tutorial was used as a refresh crash course on Sass to meet the project requirements
 -[JavaScript forEach only returning last value](https://stackoverflow.com/questions/46808693/foreach-prints-only-last-value-the-typical-closure-issue-in-javascript)
 - [Return last word in a string](https://stackoverflow.com/questions/20883404/javascript-returning-the-last-word-in-a-string)
+- [Structuring your sass project](https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4)
+  - This article explained how to structure sass files for smaller projects
 
 [Back to Contents](#contents)
 

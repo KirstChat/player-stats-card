@@ -1,4 +1,3 @@
-/* Global Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,6 +14,10 @@ body {
   min-height: 100vh;
 }
 
+.hidden {
+  display: none;
+}
+
 .card {
   background: #fff;
   width: 300px;
@@ -23,40 +26,34 @@ body {
 .box--grey {
   background: #e9e9e9;
   padding: 0.75rem 1rem;
-
-  &:hover {
-    background: #d9d9d9;
-  }
 }
-
-.hidden {
-  display: none;
+.box--grey:hover {
+  background: #d9d9d9;
 }
 
 .dropdown {
   padding: 1rem;
-}
-
-.dropdown__btn {
   cursor: pointer;
+}
+.dropdown .dropdown__btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.dropdown__list {
+.dropdown .dropdown__list {
   position: absolute;
   width: 268px;
-
-  li {
-    cursor: pointer;
-    list-style-type: none;
-  }
+}
+.dropdown .dropdown__list .box--grey {
+  list-style-type: none;
 }
 
 .player__profile {
-  background: url('../../assets/images/background-pattern.png') no-repeat top
-    right;
+  background: url("../../assets/images/background-pattern.png") no-repeat top right;
+}
+.player__profile .player {
+  margin: 1rem 0 -1rem 0.5rem;
+  width: 60%;
 }
 
 .player-stats {
@@ -64,21 +61,15 @@ body {
   color: #fff;
   padding: 1rem;
   position: relative;
-
-  h1 {
-    font-size: 1.375rem;
-    font-weight: 400;
-  }
 }
-
-.player {
-  margin-top: 1rem;
-  margin-left: 0.5rem;
-  margin-bottom: -1rem;
-  width: 60%;
+.player-stats h1 {
+  font-size: 1.375rem;
+  font-weight: 400;
 }
-
-.badge {
+.player-stats .position {
+  margin-top: 0.5rem;
+}
+.player-stats .badge {
   background: #fff;
   border-radius: 50%;
   height: 82px;
@@ -94,17 +85,15 @@ body {
   gap: 0.25rem;
   margin-top: 1rem;
 }
-
-.stat {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  color: #000;
+.stats .box--grey {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: #000;
   height: 40px;
-
-  span {
-    font-weight: 700;
-    font-size: 1.25rem;
-  }
+}
+.stats .box--grey span {
+  font-weight: 700;
+  font-size: 1.25rem;
 }

@@ -1,0 +1,10 @@
+.card {
+  background: $white;
+  width: 300px;
+}
+
+@mixin space-between() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

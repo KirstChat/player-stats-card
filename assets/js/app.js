@@ -19,7 +19,6 @@ const getPlayers = () => {
     const { players } = data;
 
     players.forEach(player => {
-      console.log(player);
       const playerName = player.player.name;
       const playerPosition = player.player.info;
       const imgPath = player.player.id;
@@ -82,7 +81,16 @@ const setPlayerStats = stats => {
       playerStats.querySelector('#goal_assist').textContent = `${stat.value}`;
     }
   });
+  // const fwdPass = stats.filter(stat => {
+  //   if ((stat.name = 'fwd_pass')) {
+  //     return stat.value;
+  //   }
+  // });
+  // console.log(fwdPass);
 };
+
+// passes per minute = fwd + bck / mins_played
+// goals = goals / appearances
 
 // Display list of players when menu is clicked
 dropdownBtn.addEventListener('click', () => {
