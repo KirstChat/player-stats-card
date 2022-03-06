@@ -13,7 +13,9 @@ let minsPlayed;
 
 // Get data from player-stats.json
 const getData = async () => {
-  const res = await fetch('/data/player-stats.json');
+  const res = await fetch(
+    'https://raw.githubusercontent.com/KirstChat/player-stats-card/master/data/player-stats.json'
+  );
   const data = await res.json();
 
   return data;
