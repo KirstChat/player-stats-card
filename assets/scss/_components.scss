@@ -62,8 +62,7 @@
 }
 
 .stats {
-  display: flex;
-  flex-direction: column;
+  @include column;
   gap: 0.25rem;
   margin-top: 1rem;
 
@@ -73,6 +72,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     color: #000;
     height: 40px;
+    width: 100%;
 
     span {
       font-weight: 700;

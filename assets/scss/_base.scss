@@ -4,6 +4,20 @@ $bg-grey: #e9e9e9;
 $hover-grey: #d9d9d9;
 $white: #fff;
 
+// Mixins
+@mixin space-between() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin column() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 // Global Reset
 * {
   box-sizing: border-box;
@@ -12,16 +26,13 @@ $white: #fff;
 }
 
 body {
+  @include column;
   background: #333;
   font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
 }
 
-// Utilies
+// Utilities
 .hidden {
   display: none;
 }

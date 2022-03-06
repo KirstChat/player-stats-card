@@ -12,7 +12,7 @@ The goal for this project was to build a stats card component that allows the us
   - [Other Tools](#other-tools)
 - [Project Setup](#project-setup)
 - [Deployment](#deployment)
-- [Testing](#testing)
+- [Future Features](#future-features)
 - [Credits](#credits)
 
 ---
@@ -32,15 +32,17 @@ The following packages are required for this project and are installed as dev de
 
 - [Gulp](https://gulpjs.com/)
   - Task runner which will run compilation task
+- [Gulp-Autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
+  - Text
 - [Gulp-Sass](https://www.npmjs.com/package/gulp-sass)
-  - Compile our sass
+  - Compile sass files into css
 - [Sass](https://www.npmjs.com/package/sass)
   - CSS preprocessor
 
 ### Other Tools
 
 - [Affinity Designer](https://affinity.serif.com/en-gb/designer/)
-  - Affinity Designer was used to view the .psd file for information on colours and fonts used
+  - Affinity Designer was used to view the .psd file for information on colours and fonts used. It was also used to save the background pattern as a .png file to add to the component.
 - [Font Awesome](https://fontawesome.com/)
   - Used to add a chevron icon to the dropdown menu
 - [Git](https://git-scm.com/)
@@ -107,19 +109,12 @@ This project was created in VS Code and pushed to GitHub using the steps outline
 
 ---
 
-## Features to Add
+## Future Features
 
 - Save to local storage
 - Transitions
 - Favicon
-
----
-
-## Testing
-
-Test on Chrome, Firefox and Edge if possible!
-
-[Back to Contents](#contents)
+- Click outside of dropdown to close
 
 ---
 

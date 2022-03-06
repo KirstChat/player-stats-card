@@ -5,6 +5,12 @@ const playerProfile = document.querySelector('.player__profile');
 const playerImg = document.querySelector('.player');
 const playerStats = document.querySelector('.player-stats');
 
+let appearances;
+let goals;
+let fwdPass;
+let backwardPass;
+let minsPlayed;
+
 // Get data from player-stats.json
 const getData = async () => {
   const res = await fetch('../../data/player-stats.json');
@@ -70,27 +76,49 @@ const setPlayerDetails = (playerName, playerPosition) => {
 const setPlayerStats = stats => {
   stats.forEach(stat => {
     if (stat.name === 'appearances') {
-      playerStats.querySelector('#appearances').textContent = `${stat.value}`;
+      appearances = stat.value;
+      playerStats.querySelector('#appearances').textContent = `${appearances}`;
     }
 
     if (stat.name === 'goals') {
-      playerStats.querySelector('#goals').textContent = `${stat.value}`;
+      goals = stat.value;
+      playerStats.querySelector('#goals').textContent = `${goals}`;
     }
 
     if (stat.name === 'goal_assist') {
       playerStats.querySelector('#goal_assist').textContent = `${stat.value}`;
     }
+
+    if (stat.name === 'fwd_pass') {
+      fwdPass = stat.value;
+    }
+
+    if (stat.name === 'backward_pass') {
+      backwardPass = stat.value;
+    }
+
+    if (stat.name === 'mins_played') {
+      minsPlayed = stat.value;
+    }
   });
-  // const fwdPass = stats.filter(stat => {
-  //   if ((stat.name = 'fwd_pass')) {
-  //     return stat.value;
-  //   }
-  // });
-  // console.log(fwdPass);
+
+  goalsPerMatch(appearances, goals);
+  passesPerMinute(fwdPass, backwardPass, minsPlayed);
 };
 
-// passes per minute = fwd + bck / mins_played
-// goals = goals / appearances
+// Calculate goals per match
+const goalsPerMatch = (appearances, goals) => {
+  const goalsPerMatch = goals / appearances;
+  playerStats.querySelector(
+    '#goals_per_match'
+  ).textContent = `${goalsPerMatch.toFixed(2)}`;
+};
+
+// Calculate passes per minute
+const passesPerMinute = (fwdPass, backwardPass, minsPlayed) => {
+  const passes = (fwdPass + backwardPass) / minsPlayed;
+  playerStats.querySelector('#passes').textContent = `${passes.toFixed(2)}`;
+};
 
 // Display list of players when menu is clicked
 dropdownBtn.addEventListener('click', () => {
