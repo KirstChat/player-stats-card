@@ -49,28 +49,27 @@ body {
   list-style-type: none;
 }
 
-.player__profile {
+.player {
   background: url("../../assets/images/background_pattern.png") no-repeat top right;
 }
-.player__profile .player {
+.player .player__img {
   margin: 1rem 0 -1rem 0.5rem;
   width: 60%;
 }
-
-.player-stats {
+.player .player__details {
   background: #e90051;
   color: #fff;
   padding: 1rem;
   position: relative;
 }
-.player-stats h1 {
+.player .player__details .player__name h1 {
   font-size: 1.375rem;
   font-weight: 400;
 }
-.player-stats .position {
+.player .player__details .player__name p {
   margin-top: 0.5rem;
 }
-.player-stats .badge {
+.player .player__details .player__badge {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,11 +82,10 @@ body {
   top: -30px;
   right: 1rem;
 }
-.player-stats .badge img {
+.player .player__details .player__badge img {
   height: 65px;
 }
-
-.stats {
+.player .player__stats {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,7 +93,7 @@ body {
   gap: 0.25rem;
   margin-top: 1rem;
 }
-.stats .box--grey {
+.player .player__stats .box--grey {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -104,7 +102,7 @@ body {
   height: 40px;
   width: 100%;
 }
-.stats .box--grey span {
+.player .player__stats .box--grey span {
   font-weight: 700;
   font-size: 1.25rem;
 }

@@ -111,6 +111,8 @@ This project was created in VS Code and pushed to GitHub using the steps outline
 
 ## Future Features
 
+Below is a list of features I would like to add to this component when I have more time and gain more experience:
+
 - Save to local storage
 - Transitions
 - Favicon
@@ -121,12 +123,22 @@ This project was created in VS Code and pushed to GitHub using the steps outline
 
 ## Credits
 
+### Code
+
 - [Sass Tutorial by The Net Ninja](https://www.youtube.com/watch?v=_kqN4hl9bGc&list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb)
-  - This tutorial was used as a refresh crash course on Sass to meet the project requirements
--[JavaScript forEach only returning last value](https://stackoverflow.com/questions/46808693/foreach-prints-only-last-value-the-typical-closure-issue-in-javascript)
-- [Return last word in a string](https://stackoverflow.com/questions/20883404/javascript-returning-the-last-word-in-a-string)
+  - This tutorial was used as a refresh crash course on Sass to meet the project requirements.
+- [Gulp Setup by Coding in Public](https://www.youtube.com/watch?v=ubHwScDfRQA)
+  - This tutorial provide some insight into other packages to install and add to the gulpfile. I decided to add the gulp-autoprefixer to autoprefix any css if needed.
+- [Stackoverflow: JavaScript forEach only returning last value](https://stackoverflow.com/questions/46808693/foreach-prints-only-last-value-the-typical-closure-issue-in-javascript)
+  - I was initally having trouble displaying all the player names in the dropdown menu and the first answer helped with approaching the problem in a different way by appending a child element to the HTML instead of just updating the innerHTML of the parent.
+- [Stackoverflow: Return last word in a string](https://stackoverflow.com/questions/20883404/javascript-returning-the-last-word-in-a-string)
+  - The first answer was a reminder on how to return the last word in a string to display the players position in the HTML.
 - [Structuring your sass project](https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4)
-  - This article explained how to structure sass files for smaller projects
+  - This article explained how to structure sass files for smaller projects.
+
+### Images
+
+I was unsure how to get the team badges from the provided badges_sprite.png, so downloaded the follwoing badge images as an alternative:
 
 - [Tottenham Hotspur Logo](https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.)
 - [Manchester City Logo](https://en.wikipedia.org/wiki/Manchester_City_F.C.)

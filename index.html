@@ -14,23 +14,27 @@
 
 <body>
   <main class="container">
-    <div class="dropdown">
+    <!-- Dropdown menu with list of players -->
+    <section class="dropdown">
       <div class="dropdown__btn box--grey">
         <p class="dropdown__text">Select a player...</p>
         <i class="fas fa-chevron-down"></i>
       </div>
       <ul class="dropdown__list hidden"></ul>
-    </div>
+    </section>
 
-    <div class="player__profile hidden">
-      <img class="player" src="#" alt="#">
-      <div class="player-stats">
-        <div class="badge">
+    <!-- Player details-->
+    <section class="player hidden">
+      <img class="player__img" src="#" alt="#">
+      <div class="player__details">
+        <div class="player__badge">
           <img src="#" alt="#">
         </div>
-        <h1>Player Name</h1>
-        <p class="position">Position</p>
-        <div class="stats">
+        <div class="player__name">
+          <h1>Player Name</h1>
+          <p>Position</p>
+        </div>
+        <div class="player__stats">
           <div class="box--grey">
             <p>Appearances</p>
             <span id="appearances">0</span>
@@ -53,7 +57,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <script src="./assets/js/app.js"></script>
