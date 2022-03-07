@@ -1,8 +1,8 @@
 # Player Stat Card
 
-Insert Screenshot on Completion
+![screenshot](./assets/images/screenshot.png)
 
-The goal for this project was to build a stats card component that allows the user to select from a list of players to view the relevant stats for that player. The component should function and display accurately in Chrome, Firefox and Edge.
+The goal for this project was to build a stats card component that allows the user to select from a list of players and view the relevant stats for that player. The component should function and display accurately in Chrome, Firefox and Edge.
 
 ## Contents
 
@@ -12,7 +12,6 @@ The goal for this project was to build a stats card component that allows the us
   - [Other Tools](#other-tools)
 - [Project Setup](#project-setup)
 - [Deployment](#deployment)
-- [Future Features](#future-features)
 - [Credits](#credits)
 
 ---
@@ -33,7 +32,7 @@ The following packages are required for this project and are installed as dev de
 - [Gulp](https://gulpjs.com/)
   - Task runner which will run compilation task
 - [Gulp-Autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
-  - Text
+  - Adds any required vendor prefixes to compiled css
 - [Gulp-Sass](https://www.npmjs.com/package/gulp-sass)
   - Compile sass files into css
 - [Sass](https://www.npmjs.com/package/sass)
@@ -68,8 +67,8 @@ This project was created using the steps outlined below:
 - You can check this by opening the terminal and running the `node -v` command to see which version of NodeJS you have installed
 - If you don't have NodeJS installed, you can download and install it from [https://nodejs.org/en/](https://nodejs.org/en/)
 - NodeJS will come with npm which will be used to install packages - you can check this is installed by running the `npm -v` command
-- ***List instructions on creating folders***
-- npm init > creates a package.json which lists dependencies
+- From here, you can start creating folders and files from your project
+- Before installing any packages, first run `npm init`to create a package.json - this will list all the required packages for the project
 
 ### Cloning the Repository
 
@@ -109,18 +108,6 @@ This project was created in VS Code and pushed to GitHub using the steps outline
 
 ---
 
-## Future Features
-
-Below is a list of features I would like to add to this component when I have more time and gain more experience:
-
-- Save to local storage
-- Transitions
-- Favicon
-- Click outside of dropdown to close
-- Loader when waiting on data to be fetched
-
----
-
 ## Credits
 
 ### Code
@@ -128,9 +115,9 @@ Below is a list of features I would like to add to this component when I have mo
 - [Sass Tutorial by The Net Ninja](https://www.youtube.com/watch?v=_kqN4hl9bGc&list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb)
   - This tutorial was used as a refresh crash course on Sass to meet the project requirements.
 - [Gulp Setup by Coding in Public](https://www.youtube.com/watch?v=ubHwScDfRQA)
-  - This tutorial provide some insight into other packages to install and add to the gulpfile. I decided to add the gulp-autoprefixer to autoprefix any css if needed.
+  - This tutorial provide some insight into other packages to install and add to the gulpfile. I decided to add the gulp-autoprefixer to autoprefix any css if required.
 - [Stackoverflow: JavaScript forEach only returning last value](https://stackoverflow.com/questions/46808693/foreach-prints-only-last-value-the-typical-closure-issue-in-javascript)
-  - I was initally having trouble displaying all the player names in the dropdown menu and the first answer helped with approaching the problem in a different way by appending a child element to the HTML instead of just updating the innerHTML of the parent.
+  - I was initally having trouble displaying all the player names in the dropdown menu and the first answer helped with approaching the problem in a different way by appending a child element to the HTML instead of updating the innerHTML of the parent.
 - [Stackoverflow: Return last word in a string](https://stackoverflow.com/questions/20883404/javascript-returning-the-last-word-in-a-string)
   - The first answer was a reminder on how to return the last word in a string to display the players position in the HTML.
 - [Structuring your sass project](https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4)
