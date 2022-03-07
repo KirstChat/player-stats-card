@@ -69,6 +69,8 @@ This project was created using the steps outlined below:
 - NodeJS will come with npm which will be used to install packages - you can check this is installed by running the `npm -v` command
 - From here, you can start creating folders and files from your project
 - Before installing any packages, first run `npm init`to create a package.json - this will list all the required packages for the project
+- Install the packages listed above as dev dependencies
+- Create a gulp file to compile scss files into css and watch for any changes to scss files on live server
 
 ### Cloning the Repository
 
